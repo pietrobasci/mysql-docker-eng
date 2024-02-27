@@ -1,4 +1,4 @@
-# Docker composed with MySQL and *phpmyadmin*
+# Docker compose with MySQL and *phpmyadmin*
 
 Database: https://www.mysqltutorial.org/mysql-sample-database.aspx
 
