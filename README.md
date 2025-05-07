@@ -7,7 +7,7 @@ Use GitHub Desktop or the 'code' download button.
 
 Instead from the terminal:
 ```
-git clone https://github.com/Cryst4lDr4g0n/mysql-docker-eng.git
+git clone https://github.com/DavideCalandra/mysql-docker-eng.git
 ```
 
 For Mac M* users uncomment  ```platform: linux/amd64``` in ```docker-compose.yml```
