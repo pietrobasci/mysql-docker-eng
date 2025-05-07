@@ -1,32 +1,36 @@
-# Docker compose con MySQL e *phpmyadmin*
+# Docker compose with MySQL and *phpmyadmin*
 
 Database: https://www.mysqltutorial.org/mysql-sample-database.aspx
 
-### Clonare il repository
-Utilizzare GitHub Desktop o il tasto di download 'code'.
+### Clone the repository
+Use GitHub Desktop or the 'code' download button.
 
-Invece da terminale:
+Instead from the terminal:
 ```
-git clone https://github.com/AndreaAvignone/mysql-docker.git
+git clone https://github.com/DavideCalandra/mysql-docker-eng.git
 ```
 
-Per utenti Mac M* togliere il commento a ```platform: linux/amd64```
-
-### IMPORTANTE: Ricordarsi di aggiungere le credenziali nel file .env
-```
-MYSQL_USER=user
-MYSQL_ROOT_PASSWORD=root_password
-MYSQL_PASSWORD=user_password
-MYSQL_DATABASE=name
-```
+For Mac M* users uncomment  ```platform: linux/amd64``` in ```docker-compose.yml```
 
 ### Run
-Installare Docker https://docs.docker.com/get-docker/ e avviare i container:
+Install Docker https://docs.docker.com/get-docker/ and start containers from inside the *mysql-docker* folder:
 ```
 docker-compose up -d
 ```
 
+*sudo* may be required on Linux
+
+```
+sudo docker-compose up -d
+```
+
+To stop it:
+```
+docker-compose down
+```
 ### Setting
 **MySQL**: ```localhost:3306```
 
 **phpmyadmin**: ```localhost:8081```
+
+To verify the operation log in to *phpMyAdmin* and check for the presence of *classicmodels*.
